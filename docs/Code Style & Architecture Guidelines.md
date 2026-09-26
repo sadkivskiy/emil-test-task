@@ -29,7 +29,7 @@ tests/utils/              Shared test helpers (seeds, loggers). Not API clients.
 tests/support/            World, hooks, and runner setup.
 cucumber.js               Profiles, formats, timeout.
 .env.example              Names of required variables. No real tokens.
-reports/                  Generated. Not committed.
+reports/                  Generated locally. reports/report.html is the committed demo.
 ```
 
 A new API surface is a new folder under `src/services/` and a matching folder under `tests/features/`. The service folder gets the client and schema. Steps and fixtures stay in the shared `tests/steps` and `tests/fixtures` folders. Axios is constructed only in `src/http/`. It does not grow the claims client.

@@ -81,3 +81,9 @@ About 9 hours.
 ## AI assistance
 
 Cursor was used heavily to build the framework, split it by domain, review it against a written style guide, and draft this README. The specification, the inferred state machine, which boundaries to assert, and the choice to fail on the contract rather than on the current API behaviour were reviewed and directed by hand.
+
+## Demo
+
+[demo-report.html](demo-report.html) is the last live run, committed in the repository root so it is easy to find. 
+Open it in a browser and use it as the demo instead of screenshots: the report shows the scenarios, the failures, and the assertion text in one place. 
+GitHub shows the HTML source, so download the file first. `npm test` writes a fresh copy to `reports/cucumber.html`, which stays local.
