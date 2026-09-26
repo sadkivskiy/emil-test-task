@@ -17,6 +17,10 @@ jobs:
       - run: npm run typecheck
       - run: npm run lint
       - run: npm run test:dry
+        env:
+          # Dry-run builds World and parses config, but it does not call the API.
+          CLAIM_SERVICE_API_URL: https://example.com
+          CLAIM_SERVICE_API_TOKEN: dry-run
       - run: npm test
         env:
           CLAIM_SERVICE_API_URL: ${{ secrets.CLAIM_SERVICE_API_URL }}
