@@ -1,0 +1,3 @@
+export const PAYOUT_POLL_TIMEOUT_MS = 10_000;
+
+export const CUCUMBER_STEP_TIMEOUT_MS = 20_000;
